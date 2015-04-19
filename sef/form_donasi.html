@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>Donasi | SI Endowment Fund</title>
+	<title>Tambah Donasi | SI Endowment Fund</title>
 
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +30,7 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			    <ul class="nav navbar-nav">
 			    	<li><a href="index.html">Beranda</a></li>
-			        <li class="active"><a href="donasi.html">Donasi</a></li>
+			        <li><a href="donasi.html">Donasi</a></li>
 			        <li><a href="donatur.html">Donatur</a></li>
 			        <li><a href="komunikasi.html">Komunikasi</a></li>
 			        <li><a href="kode.html">Kode</a></li>
@@ -52,54 +52,55 @@
 	<div style="width: 87%; margin: 25px auto">
 	<div class="row">
 		<div class="col-md-12">
-			<h2 class="text-center" style="margin-bottom: 30px">Pengelolaan Transaksi Donasi</h2>
-			<a href="form_donasi.html" class="btn btn-primary pull-right" style="margin-bottom: 30px">Tambah Transaksi</a>
-			<table class="table table-condensed">
-				<thead>
-					<tr>
-						<th>No.</th>
-						<th>Tanggal</th>
-						<th>Nominal</th>
-						<th>Jenis</th>
-						<th>Channel</th>
-						<th>Action</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td>18-04-2015</td>
-						<td>Rp. 500.000,-</td>
-						<td>Tidak bersyarat</td>
-						<td>Transfer</td>
-						<td><button class="btn btn-success">Ubah</button> <button class="btn btn-danger">Hapus</button></td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>18-04-2015</td>
-						<td>Rp. 7.000.000,-</td>
-						<td>Tidak bersyarat</td>
-						<td>Event</td>
-						<td><button class="btn btn-success">Ubah</button> <button class="btn btn-danger">Hapus</button></td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>16-04-2015</td>
-						<td>Rp. 800.000,-</td>
-						<td>Tidak bersyarat</td>
-						<td>Transfer</td>
-						<td><button class="btn btn-success">Ubah</button> <button class="btn btn-danger">Hapus</button></td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>16-04-2015</td>
-						<td>Rp. 10.000.000,-</td>
-						<td>Tidak bersyarat</td>
-						<td>Event</td>
-						<td><button class="btn btn-success">Ubah</button> <button class="btn btn-danger">Hapus</button></td>
-					</tr>
-				</tbody>
-			</table>
+			<h2 class="text-center" style="margin-bottom: 30px">Tambah Transaksi Donasi</h2>
+			<div class="col-md-5">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label class="control-label col-md-2">Tanggal</label>
+					<div class="col-md-10">
+						<input type="text" class="form-control" placeholder="dd-mm-yyyy">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-2">Nominal</label>
+					<div class="col-md-10">
+						<input type="text" class="form-control" placeholder="tanpa titik">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-2">Jenis</label>
+					<div class="col-md-10">
+						<select class="form-control">
+							<option>- Pilih Jenis -</option>
+							<option>Endowment Fund Tidak Bersyarat</option>
+							<option>Endowment Fund Bersyarat</option>
+							<option>Donasi Bersyarat</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-2">Channel</label>
+					<div class="col-md-10">
+						<select class="form-control">
+							<option>- Pilih Channel -</option>
+							<option>Tunai di Event</option>
+							<option>Tunai di BPUDL</option>
+							<option>Transfer</option>
+							<option>Autodebt</option>
+							<option>Credit Card</option>
+							<option>Lainnya</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-2"></label>
+					<div class="col-md-10">
+						<a href="donasi.html" class="btn btn-success">Simpan</a>
+						<a href="donasi.html" class="btn btn-danger">Kembali</a>
+					</div>
+				</div>
+			</form>
+			</div>
 		</div>
 	</div>
 	</div>
