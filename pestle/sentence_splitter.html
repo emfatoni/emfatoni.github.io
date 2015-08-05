@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<head>
+</head>
+
+<body>
+	<div id="isi">
+		
+	</div>
+	<script type="text/javascript">
+		var str = "Singapore's economic freedom score is 89,4, making its economy the 2nd freest in the 2015 Index. Its score is unchanged from last year, with gains in the management of government spending, monetary freedom, and labor freedom offset by a slightly lower score for freedom from corruption. Only 0,2 point behind Hong Kong, Singapore ranks 2nd out of 42 countries in the Asia-Pacific region. Already benefiting from one of the world's highest levels of economic freedom, Singapore has reinforced its commitment to continued reform. Over the past five years, the small city economy has advanced its economic freedom by 2,1 points, the largest score increase among the 10 freest economies. Sustained efforts to build a world-class financial center and further open its market to global commerce have led to advances in four of the 10 economic freedoms, including financial freedom and investment freedom. A highly educated and motivated workforce has added to the economy's dynamism and resilience, reinforcing Singapore's innovative capacity. Singaporean society has a low tolerance for corruption, and the effective rule of law strongly undergirds all aspects of economic development. More work to reduce the state's involvement in key sectors will be necessary to realize continued advances in economic freedom. Singapore is a nominally democratic state that has been ruled by the People's Action Party (PAP) since independence in 1965. The PAP won 81 out of 87 seats in the legislature in the May 2011 elections, although its percentage of the vote (just over 60 percent) was the lowest in history. The opposition won another seat in 2013 during a special election. Certain civil liberties, such as freedom of assembly and freedom of speech, remain restricted, but the PAP has embraced economic liberalization and international trade. Singapore is one of the world's most prosperous nations. Its economy is dominated by services, but the country is also a major manufacturer of electronics and chemicals. Singapore has traditionally been lauded for its lack of corruption. As in most countries, there are ongoing concerns over issues of transparency and the power of deeply entrenched groups. Political speech is regulated, inhibiting organized pressure for policy changes. Contracts are secure, there is no expropriation, and commercial courts function well. Singapore has one of Asia's best intellectual property regimes. The top individual income tax rate is 20 percent, and the top corporate tax rate is 17 percent. Other taxes include a value-added tax and a tax on property. The overall tax burden equals 14 percent of domestic production. Government expenditures are equivalent to 14.4 percent of the domestic economy, and public debt equals 104 percent of gross domestic product. Singapore's regulatory framework is one of the world's most efficient. Starting a business takes three days, and required procedures are straightforward. No minimum wage is enforced, but wage adjustments are guided by the National Wage Council. The state funds housing, education, transport, and health care subsidy programs and influences other prices through regulations and state-linked enterprises. The average tariff rate is 0 percent. Imports of chewing gum and “objectionable” publications are restricted, and some service industries face barriers. Foreign investment is welcomed, but investment in several sectors is restricted. The banking-dominated financial system is well supported by liquid capital markets. As of 2014, 119 of 124 banks were foreign. The state retains some ownership in the financial sector.";
+		var result = str.match( /[^\.!\?]+[\.!\?]+/g );
+
+		var isi = document.getElementById("isi");
+		isi.innerHTML = "<ul>";
+		for(i=0; i<=result.length-1; i++){
+			isi.innerHTML = isi.innerHTML+"<li>"+result[i]+"</li>";
+		}
+		isi.innerHTML = isi.innerHTML+"</ul>";
+	</script>
+	
+</body>
+
+</html>
